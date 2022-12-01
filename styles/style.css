@@ -1,1 +1,41 @@
 /* CSS 스타일 */
+
+@import url(./normalize.css);
+@import url(./reset.css);
+body{
+  background: #ffc;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+/* 레이아웃 */
+.header, .visual, .main, .slogan, .footer-inner{
+  width: 940px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.header{
+  background: pink;
+  padding: 0 30px;
+  height: 15vh;
+}
+.visual{
+  background: orange;
+  height: 10vh;
+}
+.main{
+  background: lightgreen;
+  height: 50vh;
+}
+.slogan{
+  background: skyblue;
+  height: 10vh;
+}
+.footer{
+  background: gray;
+}
+.footer-inner{
+  background: silver;
+  height: 15vh;
+}
