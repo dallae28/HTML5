@@ -39,7 +39,6 @@ body{
   linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
   background-repeat: no-repeat, repeat;
   background-position: 50% 0, 0 0; */
-
   background: url("./images/bg_flower.png") no-repeat 50% 0,
   yellow linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
 }
@@ -199,7 +198,7 @@ body{
 
 .sub-menu a{
   display: inline-block;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 
 .sub-menu a:hover,
@@ -212,6 +211,7 @@ body{
   0%{
     font-size: 12px;
     color: hsla(0, 0%, 0%, 0);
+    transform: translate(0,0);
     /* padding: 0; */
   }
   50%{
@@ -226,19 +226,62 @@ body{
   }
 }
 
+@keyframes fadeEffect{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .visual{
   /* background: orange; */
   height: 120px;
   position: relative;
 }
+.visual::before,
+.visual::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* animation-name: fadeEffect;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation: fadeEffect 2000ms infinite alternate;
+}
+
+.visual::before{
+  background-image: url("./images/ani_flower_01.png"),
+  url("./images/ani_flower_02.png");
+  background-repeat: no-repeat;
+  background-position: 0 -10px, 600px 0;
+}
+.visual::after{
+  background-image: url("./images/ani_flower_03.png"),
+  url("./images/ani_flower_04.png");
+  background-repeat: no-repeat;
+  background-position: 300px 0, 800px 0;
+  animation-delay: 1000ms;
+}
+
 .visual-text{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  animation-name: moveEffect;
+  /* animation-name: moveEffect;
   animation-duration: 3000ms;
   animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  /* display: inline-block; */
-  position:absolute;
+  animation-fill-mode: forwards; */
+  animation: moveEffect 2000ms ease-in-out forwards;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }
 
 
