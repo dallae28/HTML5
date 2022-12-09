@@ -372,27 +372,26 @@ body{
   flex-wrap: row nowrap;
   justify-content: space-between; */
 
-  /* display: flow-root; */
+  display: flow-root;
   font-size: 0;
 }
 .login .sign li{
   display: inline-block;
   font-size: 11px;
-
 }
 
 .login .sign li:first-child{
-  /* float: left; */
-  width: 45%;
+  float: left;
+  /* width: 45%; */
 }
 .login .sign li:last-child{   
-  /* float: right; */
-  width: 55%;
+  float: right;
+  /* width: 55%; */
 }
 
 .login .sign a{
-  /* display: block; */
-  display: inline-block;
+  display: block;
+  /* display: inline-block; */
   padding: 6px 0;
   letter-spacing: -1px;
 }
@@ -405,15 +404,48 @@ body{
 }
 
 .validation-list{
-  background-color: yellow;
   margin-top: 25px;  
-  border: 1px solid blue;
 }
+
+/* 잘못된 예 -이전 코드 */
+/* .validation-list li{
+  background: url("./images/validation_icon.png") no-repeat 25px 50%, 
+  #ccc linear-gradient(to bottom, #ccc,#eee);
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  display: block;
+}
+
+.validation-list li:hover{
+  color: red;
+  cursor: pointer;
+}
+.validation-list a:focus{
+  color: red;
+} */
+
 .validation-list li{
-  background-color: pink;
   margin-top: 10px;
 }
 
+.validation-list a {
+  display: block;
+  background: url("./images/validation_icon.png") no-repeat 25px 50%,
+    #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 0px 15px 0px 55px;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  line-height: 30px;
+}
+
+.validation-list a:hover,
+.validation-list a:focus {
+  color: #f00;
+} 
 
 /* 슬로건 */
 .slogan{
