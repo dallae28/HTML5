@@ -371,20 +371,28 @@ body{
   /* display: flex;
   flex-wrap: row nowrap;
   justify-content: space-between; */
+
+  /* display: flow-root; */
+  font-size: 0;
+}
+.login .sign li{
+  display: inline-block;
   font-size: 11px;
-  display: flow-root;
+
 }
 
 .login .sign li:first-child{
-  float: left;
+  /* float: left; */
+  width: 45%;
 }
-.login .sign li:last-child{
-  float: right;
+.login .sign li:last-child{   
+  /* float: right; */
+  width: 55%;
 }
-
 
 .login .sign a{
-  display: block;
+  /* display: block; */
+  display: inline-block;
   padding: 6px 0;
   letter-spacing: -1px;
 }
