@@ -368,11 +368,20 @@ body{
   background-color: #fff;
   border-radius: 0 0 5px 5px;
   padding: 4px 10px;
-  display: flex;
+  /* display: flex;
   flex-wrap: row nowrap;
-  justify-content: space-between;
+  justify-content: space-between; */
   font-size: 11px;
+  display: flow-root;
 }
+
+.login .sign li:first-child{
+  float: left;
+}
+.login .sign li:last-child{
+  float: right;
+}
+
 
 .login .sign a{
   display: block;
@@ -401,7 +410,7 @@ body{
 /* 슬로건 */
 .slogan{
   background: skyblue;
-  height: 10vh;
+  height: 10vh; 
   clear: both;
 }
 
