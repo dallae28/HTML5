@@ -447,6 +447,58 @@ body{
   color: #f00;
 } 
 
+/* 웹 관련 용어 */
+.term{
+  background: #ccc linear-gradient(to bottom, #ccc,#eee);
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 10px 15px;
+}
+
+.term-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.term-list{
+  margin-top: 10px;
+}
+
+.term-list div{
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject,
+.term-list-brief{
+  float: right;
+  width: 140px;
+}
+
+.term-list-subject{
+  font-weight: 500;
+  color: #2d74ab;
+}
+.term-list-thumbnail{
+  float: left;
+}
+.term-list-thumbnail img{
+  vertical-align: middle;
+}
+.term-list-brief{
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.cross .term-list-subject,
+.cross .term-list-brief{
+  float: left;
+}
+.cross .term-list-thumbnail{
+  float: right;
+}
+
 /* 슬로건 */
 .slogan{
   background: skyblue;
