@@ -303,11 +303,9 @@ body{
   width: 250px;
 }
 .group2{ 
-  background-color: salmon;
   width: 380px;
 }
 .group3{
-  background-color: teal;
   width: 190px;
 }
 
@@ -497,6 +495,58 @@ body{
 }
 .cross .term-list-thumbnail{
   float: right;
+}
+
+/* 검색 폼 */
+.search-form{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #aaa;
+  padding: 15px 25px 10px;
+}
+
+.search-form fieldset{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-form .form-group{
+  padding-right: 10px;
+}
+
+.search-form .form-group-label{
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.search-form .form-group-label::before{
+  content: "\e802";
+  font-family: fontello;
+  margin-right: 8px;
+}
+
+.search-form .form-group-input{
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  padding: 8px 1px 8px 8px;
+  flex-grow: 1;
+  font-size: 1.2rem;
+  /* min-width: 0;
+  min-width: 100%; */
+}
+
+.search-button{
+  background-color: #000;
+  color: #fff;
+  height: 28px;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 0 10px;
+  white-space: nowrap;
 }
 
 /* 슬로건 */
