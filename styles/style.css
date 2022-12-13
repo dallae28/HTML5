@@ -2,6 +2,7 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 @import url(./fontello.css);
+@import url(module.css);
 
 /* 숨김 콘텐츠 */
 .a11y-hidden,.legend{
@@ -590,17 +591,17 @@ body{
 
 .news-link{
   display: block;
-  
 }
 .news-link:hover{
   cursor: pointer;
 }
+
 .news-item{
-  /* position: relative; */
   position: relative;
   margin-top: 35px;
   padding-left: 130px;
 }
+
 .news-item-title{
   font-weight: 500;
 }
@@ -623,6 +624,8 @@ body{
   right: -8px;
   padding: 8px;
 }
+
+/* 신규 이벤트 및 관련 사이트 */
 
 
 /* 슬로건 */
