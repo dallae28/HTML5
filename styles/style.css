@@ -706,6 +706,38 @@ body{
   padding-bottom: 10px;
 }
 
+/* 인기 사이트 */
+.favorite{
+  background-color: pink;
+  position: relative;
+}
+
+.favorite-list{
+  background-color: mintcream;
+  list-style-type: none;
+}
+
+.favorite-list li{
+  margin-top: 10px;
+}
+
+.favorite-list li::before{
+  content: "1";
+  background-color: #aaa;
+  color: #fff;
+  padding: 1px 5px;
+  margin-right: 5px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+}
+
+.favorite-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+
 /* 슬로건 */
 .slogan{
   background: skyblue;
