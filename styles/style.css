@@ -718,6 +718,8 @@ body{
 .favorite-list li{
   margin-top: 10px;
   counter-increment: number;
+  display: flex;
+  align-items: center;
 }
 
 .favorite-list li::before{
@@ -740,8 +742,18 @@ body{
   display: inline-block;
   width: 20px;
   height: 11px;
-  background: pink;
+  background: url(images/rank.png) no-repeat;
+  position: absolute;
+  right: -12px;
 }
+
+.stop{
+  background-position: 0 50%;  /*x축, y축*/
+}
+.down{
+  background-position: 0 100%;
+}
+
 
 
 .favorite-more{
