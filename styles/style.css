@@ -743,8 +743,7 @@ body{
   width: 20px;
   height: 11px;
   background: url(images/rank.png) no-repeat;
-  position: absolute;
-  right: -12px;
+  margin-left: auto;
 }
 
 .stop{
