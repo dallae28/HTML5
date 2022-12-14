@@ -753,8 +753,6 @@ body{
   background-position: 0 100%;
 }
 
-
-
 .favorite-more{
   position: absolute;
   top: -8px;
@@ -802,12 +800,43 @@ body{
 
 /* 푸터 */
 .footer{
-  background: gray;
-}
-.footer-inner{
-  background: silver;
-  height: 15vh;
-  width: 500px;
-  overflow: hidden;
   background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #fff 70%, #fff 100%);
+}
+
+.footer-inner{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.footer-logo{
+  width: 150px;
+  padding: 20px 0 0 20px;
+}
+
+.footer-inner-wrapper{
+  flex: 1 1 auto;
+}
+
+.footer-inner .guide-list{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: #7b8385;
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 4px 20px;
+  text-transform: uppercase;
+}
+
+.guide-list a{
+  display: block;
+  padding: 6px 10px;
+}
+
+.address,
+.copyright{
+  display: block;
+  margin-top: 10px;
 }
