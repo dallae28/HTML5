@@ -561,18 +561,63 @@ body {
 
 /* 공지사항 및 자료실 */
 .board {
-  background-color: pink;
+  /* background-color: pink; */
   margin-top: 20px;
+  position: relative;
+}
+
+.board .tab-list{
+  /* background-color: lightcoral; */
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.board .tab-list .tab{
+  border: 1px solid #aaa;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 15px;
+  color: #666;
+}
+
+.board .tab-list .tab.is-select{
+  background-color: #fff;
+  color: #ed552f;
+  border: 1px solid #ed552f;
+  border-bottom: none;
+}
+
+.board-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 .tab-panel {
   display: none;
+  margin-top: 15px;
 }
 
 .is-select.tab-panel {
   display: block;
+  padding: ;
 }
 
+.tab-panel .board-list li{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tab-panel .board-list li a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: slateblue; */
+  flex-grow: 1;
+}
 
 /* 새소식 */
 .news {
